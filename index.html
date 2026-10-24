@@ -30,13 +30,12 @@
         }
     </script>
     <style>
-        body { font-family: 'Poppins', sans-serif; }
+        body { font-family: 'Poppins', sans-serif; background-color: #FFFFFF; }
         h1, h2, h3, .font-heading { font-family: 'Montserrat', sans-serif; font-weight: 900; text-transform: uppercase;}
         
-        /* White and Light Purple Hero Background */
+        /* Removed the gradient to make it pure white */
         .bg-hero-pattern {
-            background-color: #ffffff;
-            background-image: radial-gradient(circle at 50% 0%, #F3E8FF 0%, #ffffff 70%);
+            background-color: #FFFFFF;
         }
         
         /* 3D Play Ludo Button Style (Purple Theme) */
@@ -57,7 +56,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+<body class="bg-white text-gray-800 antialiased overflow-x-hidden">
 
     <!-- Header -->
     <header class="bg-white sticky top-0 z-50 shadow-sm border-b-2 border-purple-100">
@@ -120,8 +119,8 @@
             <!-- User Provided Image Section -->
             <div class="md:w-1/2 flex justify-center relative w-full">
                 <!-- Decorative shapes behind image -->
-                <div class="absolute top-10 left-10 w-32 h-32 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
-                <div class="absolute bottom-10 right-10 w-32 h-32 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+                <div class="absolute top-10 left-10 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+                <div class="absolute bottom-10 right-10 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
                 
                 <!-- IMAGE PLACEHOLDER: Yahan apni image ka path daalein -->
                 <img src="virat.jpeg" 
@@ -184,7 +183,7 @@
         </div>
     </section>
 
-    <!-- Popular Games Section -->
+    <!-- Popular Games Section (Now pure white) -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-black text-zupeex-purple mb-2">Most Popular Games</h2>
@@ -192,7 +191,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Ludo -->
-                <div class="bg-purple-100 rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border border-purple-200">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
                     <img src="https://placehold.co/150x100/transparent/purple?text=Ludo+Dice" alt="Ludo" class="absolute -right-4 -top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">LUDO</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Classic Game<br>Real Winnings</p>
@@ -201,7 +200,7 @@
                     </div>
                 </div>
                 <!-- Rummy -->
-                <div class="bg-purple-50 rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border border-purple-100">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
                     <img src="https://placehold.co/150x100/transparent/purple?text=Cards" alt="Rummy" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">RUMMY</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Skill + Strategy<br>Big Rewards</p>
@@ -210,7 +209,7 @@
                     </div>
                 </div>
                 <!-- Carrom -->
-                <div class="bg-purple-100 rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border border-purple-200">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
                     <img src="https://placehold.co/150x100/transparent/purple?text=Carrom+Board" alt="Carrom" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">CARROM</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Classic Fun<br>Real Cash</p>
@@ -219,7 +218,7 @@
                     </div>
                 </div>
                 <!-- Snake & Ladder -->
-                <div class="bg-purple-50 rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border border-purple-100">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
                     <img src="https://placehold.co/150x100/transparent/purple?text=Snake+%26+Ladder" alt="Snake & Ladder" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">SNAKE & LADDER</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Simple Game<br>Big Wins</p>
@@ -231,9 +230,9 @@
         </div>
     </section>
 
-    <!-- Download & Install Section -->
-    <section class="bg-purple-50 py-16 px-4">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center bg-white rounded-3xl p-6 md:p-10 border border-purple-100 shadow-xl">
+    <!-- Download & Install Section (Now pure white) -->
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center bg-white rounded-3xl p-6 md:p-10 border-2 border-purple-100 shadow-xl">
             
             <!-- Left Side: Download Box -->
             <div class="md:w-1/2 mb-10 md:mb-0">
@@ -243,13 +242,13 @@
                 <p class="text-gray-800 font-semibold mb-6">Get the latest version and start playing now!</p>
                 
                 <div class="flex flex-wrap gap-3 mb-6">
-                    <div class="bg-purple-50 rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-100">
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
                         <i class="fa-solid fa-shield-halved text-green-600"></i> Version: v1.2.0
                     </div>
-                    <div class="bg-purple-50 rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-100">
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
                         <i class="fa-solid fa-download text-blue-600"></i> Size: 45 MB
                     </div>
-                    <div class="bg-purple-50 rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-100">
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
                         <i class="fa-brands fa-android text-green-600"></i> Android 5.0+
                     </div>
                 </div>
