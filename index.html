@@ -20,10 +20,11 @@
                         'montserrat': ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        'zupeex-purple': '#2E1065', /* Dark Purple */
-                        'zupeex-purple-light': '#4C1D95', /* Light Purple */
-                        'zupeex-btn-purple': '#3B0764', /* Button Purple */
-                        'zupeex-accent': '#7C3AED', /* Vibrant Purple for accents */
+                        /* Naya Color Palette #6010A8 ke sath */
+                        'zupeex-purple': '#6010A8', /* Main Color */
+                        'zupeex-purple-light': '#7B24C8', /* Lighter for Hover */
+                        'zupeex-btn-purple': '#4A0C82', /* Darker for Shadows */
+                        'zupeex-accent': '#6010A8', /* Main Accent */
                     }
                 }
             }
@@ -33,36 +34,35 @@
         body { font-family: 'Poppins', sans-serif; background-color: #FFFFFF; }
         h1, h2, h3, .font-heading { font-family: 'Montserrat', sans-serif; font-weight: 900; text-transform: uppercase;}
         
-        /* Removed the gradient to make it pure white */
         .bg-hero-pattern {
             background-color: #FFFFFF;
         }
         
-        /* 3D Play Ludo Button Style (Purple Theme) */
+        /* 3D Play Ludo Button Style using #6010A8 */
         .btn-3d {
-            background-color: #7C3AED; /* Vibrant Purple */
+            background-color: #6010A8; /* Aapka diya hua color */
             color: #FFFFFF;
-            border-bottom: 6px solid #4C1D95; /* Darker Purple Shadow */
+            border-bottom: 6px solid #4A0C82; /* Darker shade for 3D effect */
             transition: all 0.1s ease;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         .btn-3d:active {
-            border-bottom: 0px solid #4C1D95;
+            border-bottom: 0px solid #4A0C82;
             transform: translateY(6px);
         }
 
         .game-card-shadow {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
 <body class="bg-white text-gray-800 antialiased overflow-x-hidden">
 
     <!-- Header -->
-    <header class="bg-white sticky top-0 z-50 shadow-sm border-b-2 border-purple-100">
+    <header class="bg-white sticky top-0 z-50 shadow-sm border-b-2 border-purple-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <!-- Crown kept yellow for contrast -->
+                <!-- Crown -->
                 <i class="fa-solid fa-crown text-3xl text-yellow-500 drop-shadow-sm"></i>
                 <h1 class="text-3xl font-black text-zupeex-purple tracking-tighter">ZUPEEX</h1>
             </div>
@@ -109,7 +109,7 @@
                     </a>
                     
                     <!-- Download Button (Linked to APK) -->
-                    <a href="apk/zupeex.apk" download class="w-full sm:w-auto bg-zupeex-purple text-white text-lg font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-zupeex-purple-light transition shadow-[0_10px_20px_rgba(46,16,101,0.3)]">
+                    <a href="apk/zupeex.apk" download class="w-full sm:w-auto bg-zupeex-purple text-white text-lg font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-zupeex-purple-light transition shadow-[0_10px_20px_rgba(96,16,168,0.3)]">
                         <i class="fa-brands fa-android text-2xl"></i> Download APK
                     </a>
                 </div>
@@ -118,9 +118,9 @@
 
             <!-- User Provided Image Section -->
             <div class="md:w-1/2 flex justify-center relative w-full">
-                <!-- Decorative shapes behind image -->
-                <div class="absolute top-10 left-10 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
-                <div class="absolute bottom-10 right-10 w-32 h-32 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+                <!-- Decorative shapes behind image (Using your purple color with opacity) -->
+                <div class="absolute top-10 left-10 w-32 h-32 bg-[#6010A8] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+                <div class="absolute bottom-10 right-10 w-32 h-32 bg-[#6010A8] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
                 
                 <!-- IMAGE PLACEHOLDER: Yahan apni image ka path daalein -->
                 <img src="virat.jpeg" 
@@ -136,54 +136,54 @@
             <h2 class="text-3xl md:text-5xl font-black text-white mb-2 flex justify-center items-center gap-2">
                 <i class="fa-solid fa-crown text-yellow-400"></i> Why Choose <span class="text-yellow-400">ZUPEEX?</span>
             </h2>
-            <p class="text-gray-300 mb-12 text-sm md:text-base font-semibold tracking-wide uppercase">Simple • Safe • Super Fun</p>
+            <p class="text-gray-200 mb-12 text-sm md:text-base font-semibold tracking-wide uppercase">Simple • Safe • Super Fun</p>
 
             <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4">
                 <!-- Feature 1 -->
-                <div class="flex flex-col items-center bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition">
-                    <div class="w-16 h-16 bg-zupeex-purple-light rounded-full flex items-center justify-center mb-3 shadow-lg border border-purple-400">
+                <div class="flex flex-col items-center bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 shadow-lg border border-white/30">
                         <i class="fa-solid fa-gamepad text-2xl text-white"></i>
                     </div>
                     <h4 class="text-white font-bold mb-1 text-sm font-poppins">Wide Range of Games</h4>
-                    <p class="text-gray-400 text-xs text-center">Ludo, Rummy, Carrom & More</p>
+                    <p class="text-gray-300 text-xs text-center">Ludo, Rummy, Carrom & More</p>
                 </div>
                 <!-- Feature 2 -->
-                <div class="flex flex-col items-center bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition">
-                    <div class="w-16 h-16 bg-zupeex-purple-light rounded-full flex items-center justify-center mb-3 shadow-lg border border-purple-400">
+                <div class="flex flex-col items-center bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 shadow-lg border border-white/30">
                         <i class="fa-solid fa-shield-halved text-2xl text-white"></i>
                     </div>
                     <h4 class="text-white font-bold mb-1 text-sm font-poppins">Fair Play System</h4>
-                    <p class="text-gray-400 text-xs text-center">100% Transparent & Secure</p>
+                    <p class="text-gray-300 text-xs text-center">100% Transparent & Secure</p>
                 </div>
                 <!-- Feature 3 -->
-                <div class="flex flex-col items-center bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition">
-                    <div class="w-16 h-16 bg-zupeex-purple-light rounded-full flex items-center justify-center mb-3 shadow-lg border border-purple-400">
+                <div class="flex flex-col items-center bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 shadow-lg border border-white/30">
                         <i class="fa-solid fa-bolt text-2xl text-white"></i>
                     </div>
                     <h4 class="text-white font-bold mb-1 text-sm font-poppins">Instant Withdrawals</h4>
-                    <p class="text-gray-400 text-xs text-center">UPI, Bank & More Options</p>
+                    <p class="text-gray-300 text-xs text-center">UPI, Bank & More Options</p>
                 </div>
                 <!-- Feature 4 -->
-                <div class="flex flex-col items-center bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition">
-                    <div class="w-16 h-16 bg-zupeex-purple-light rounded-full flex items-center justify-center mb-3 shadow-lg border border-purple-400">
+                <div class="flex flex-col items-center bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 shadow-lg border border-white/30">
                         <i class="fa-solid fa-gift text-2xl text-white"></i>
                     </div>
                     <h4 class="text-white font-bold mb-1 text-sm font-poppins">Daily Bonuses</h4>
-                    <p class="text-gray-400 text-xs text-center">More Play More Rewards</p>
+                    <p class="text-gray-300 text-xs text-center">More Play More Rewards</p>
                 </div>
                 <!-- Feature 5 -->
-                <div class="flex flex-col items-center bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition">
-                    <div class="w-16 h-16 bg-zupeex-purple-light rounded-full flex items-center justify-center mb-3 shadow-lg border border-purple-400">
+                <div class="flex flex-col items-center bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 shadow-lg border border-white/30">
                         <i class="fa-solid fa-mobile-screen text-2xl text-white"></i>
                     </div>
                     <h4 class="text-white font-bold mb-1 text-sm font-poppins">Play Anytime</h4>
-                    <p class="text-gray-400 text-xs text-center">On Web & Android App</p>
+                    <p class="text-gray-300 text-xs text-center">On Web & Android App</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Popular Games Section (Now pure white) -->
+    <!-- Popular Games Section -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-black text-zupeex-purple mb-2">Most Popular Games</h2>
@@ -191,38 +191,38 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Ludo -->
-                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
-                    <img src="https://placehold.co/150x100/transparent/purple?text=Ludo+Dice" alt="Ludo" class="absolute -right-4 -top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-[#6010A8]/20 hover:border-[#6010A8]">
+                    <img src="https://placehold.co/150x100/transparent/6010A8?text=Ludo+Dice" alt="Ludo" class="absolute -right-4 -top-2 w-32 h-32 object-cover opacity-20 group-hover:opacity-40 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">LUDO</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Classic Game<br>Real Winnings</p>
-                    <div class="w-8 h-8 bg-zupeex-accent rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple">
+                    <div class="w-8 h-8 bg-zupeex-purple rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple-light">
                         <i class="fa-solid fa-arrow-right text-white"></i>
                     </div>
                 </div>
                 <!-- Rummy -->
-                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
-                    <img src="https://placehold.co/150x100/transparent/purple?text=Cards" alt="Rummy" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-[#6010A8]/20 hover:border-[#6010A8]">
+                    <img src="https://placehold.co/150x100/transparent/6010A8?text=Cards" alt="Rummy" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-20 group-hover:opacity-40 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">RUMMY</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Skill + Strategy<br>Big Rewards</p>
-                    <div class="w-8 h-8 bg-zupeex-accent rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple">
+                    <div class="w-8 h-8 bg-zupeex-purple rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple-light">
                         <i class="fa-solid fa-arrow-right text-white"></i>
                     </div>
                 </div>
                 <!-- Carrom -->
-                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
-                    <img src="https://placehold.co/150x100/transparent/purple?text=Carrom+Board" alt="Carrom" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-[#6010A8]/20 hover:border-[#6010A8]">
+                    <img src="https://placehold.co/150x100/transparent/6010A8?text=Carrom+Board" alt="Carrom" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-20 group-hover:opacity-40 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">CARROM</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Classic Fun<br>Real Cash</p>
-                    <div class="w-8 h-8 bg-zupeex-accent rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple">
+                    <div class="w-8 h-8 bg-zupeex-purple rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple-light">
                         <i class="fa-solid fa-arrow-right text-white"></i>
                     </div>
                 </div>
                 <!-- Snake & Ladder -->
-                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-purple-100 hover:border-purple-300">
-                    <img src="https://placehold.co/150x100/transparent/purple?text=Snake+%26+Ladder" alt="Snake & Ladder" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-80 group-hover:scale-110 transition">
+                <div class="bg-white rounded-2xl p-6 text-left relative overflow-hidden game-card-shadow group cursor-pointer hover:-translate-y-2 transition duration-300 border-2 border-[#6010A8]/20 hover:border-[#6010A8]">
+                    <img src="https://placehold.co/150x100/transparent/6010A8?text=Snake+%26+Ladder" alt="Snake & Ladder" class="absolute -right-4 top-2 w-32 h-32 object-cover opacity-20 group-hover:opacity-40 group-hover:scale-110 transition">
                     <h3 class="text-zupeex-purple text-2xl font-black mb-1 relative z-10">SNAKE & LADDER</h3>
                     <p class="text-gray-600 text-xs relative z-10 mb-8 font-semibold">Simple Game<br>Big Wins</p>
-                    <div class="w-8 h-8 bg-zupeex-accent rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple">
+                    <div class="w-8 h-8 bg-zupeex-purple rounded-full flex items-center justify-center absolute bottom-4 right-4 group-hover:bg-zupeex-purple-light">
                         <i class="fa-solid fa-arrow-right text-white"></i>
                     </div>
                 </div>
@@ -230,9 +230,9 @@
         </div>
     </section>
 
-    <!-- Download & Install Section (Now pure white) -->
+    <!-- Download & Install Section -->
     <section class="bg-white py-16 px-4">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center bg-white rounded-3xl p-6 md:p-10 border-2 border-purple-100 shadow-xl">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center bg-white rounded-3xl p-6 md:p-10 border-2 border-[#6010A8]/20 shadow-2xl">
             
             <!-- Left Side: Download Box -->
             <div class="md:w-1/2 mb-10 md:mb-0">
@@ -242,13 +242,13 @@
                 <p class="text-gray-800 font-semibold mb-6">Get the latest version and start playing now!</p>
                 
                 <div class="flex flex-wrap gap-3 mb-6">
-                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-[#6010A8]/30">
                         <i class="fa-solid fa-shield-halved text-green-600"></i> Version: v1.2.0
                     </div>
-                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
-                        <i class="fa-solid fa-download text-blue-600"></i> Size: 45 MB
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-[#6010A8]/30">
+                        <i class="fa-solid fa-download text-zupeex-purple"></i> Size: 45 MB
                     </div>
-                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-purple-200">
+                    <div class="bg-white rounded-lg px-4 py-2 shadow-sm flex items-center gap-2 text-sm font-bold text-zupeex-purple border border-[#6010A8]/30">
                         <i class="fa-brands fa-android text-green-600"></i> Android 5.0+
                     </div>
                 </div>
@@ -264,19 +264,19 @@
                 <h3 class="text-2xl font-black text-zupeex-purple mb-6">How to Install?</h3>
                 <ul class="space-y-4">
                     <li class="flex gap-4 items-start">
-                        <span class="w-8 h-8 shrink-0 bg-zupeex-accent text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        <span class="w-8 h-8 shrink-0 bg-zupeex-purple text-white rounded-full flex items-center justify-center font-bold">1</span>
                         <p class="text-sm text-gray-700 font-semibold pt-1">Download the APK file from the button.</p>
                     </li>
                     <li class="flex gap-4 items-start">
-                        <span class="w-8 h-8 shrink-0 bg-zupeex-accent text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        <span class="w-8 h-8 shrink-0 bg-zupeex-purple text-white rounded-full flex items-center justify-center font-bold">2</span>
                         <p class="text-sm text-gray-700 font-semibold pt-1">Go to Settings > Security and enable "Unknown Sources".</p>
                     </li>
                     <li class="flex gap-4 items-start">
-                        <span class="w-8 h-8 shrink-0 bg-zupeex-accent text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        <span class="w-8 h-8 shrink-0 bg-zupeex-purple text-white rounded-full flex items-center justify-center font-bold">3</span>
                         <p class="text-sm text-gray-700 font-semibold pt-1">Open the downloaded file and tap Install.</p>
                     </li>
                     <li class="flex gap-4 items-start">
-                        <span class="w-8 h-8 shrink-0 bg-zupeex-accent text-white rounded-full flex items-center justify-center font-bold">4</span>
+                        <span class="w-8 h-8 shrink-0 bg-zupeex-purple text-white rounded-full flex items-center justify-center font-bold">4</span>
                         <p class="text-sm text-gray-700 font-semibold pt-1">Launch the app and start playing!</p>
                     </li>
                 </ul>
@@ -285,7 +285,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-zupeex-purple text-white pt-12 pb-6 px-4 border-t-4 border-zupeex-accent">
+    <footer class="bg-zupeex-purple text-white pt-12 pb-6 px-4 border-t-4 border-zupeex-purple-light">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             
             <!-- Logo & Tagline -->
@@ -294,11 +294,11 @@
                     <i class="fa-solid fa-crown text-3xl text-yellow-400"></i>
                     <h2 class="text-2xl font-black tracking-tighter">ZUPEEX</h2>
                 </div>
-                <p class="text-gray-400 text-sm font-semibold">India's Trusted Gaming Platform</p>
+                <p class="text-gray-300 text-sm font-semibold">India's Trusted Gaming Platform</p>
             </div>
 
             <!-- Links -->
-            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300 font-semibold">
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-200 font-semibold">
                 <a href="#" class="hover:text-white transition">Home</a>
                 <a href="#" class="hover:text-white transition">Games</a>
                 <a href="#" class="hover:text-white transition">How It Works</a>
@@ -310,14 +310,14 @@
 
             <!-- Social Icons -->
             <div class="flex gap-4">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-accent transition"><i class="fa-brands fa-telegram-plane"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-accent transition"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-accent transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-accent transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-purple-light transition"><i class="fa-brands fa-telegram-plane"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-purple-light transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-purple-light transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-zupeex-purple-light transition"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
         
-        <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 text-center text-xs text-gray-500 font-semibold">
+        <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/20 text-center text-xs text-gray-400 font-semibold">
             © 2024 Zupeex. All rights reserved.
         </div>
     </footer>
