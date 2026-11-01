@@ -1,21 +1,8 @@
 User-agent: *
 Allow: /
 
-Allow: /$
-Allow: /index.html
-Allow: /games.html
-Allow: /how-it-works.html
-Allow: /about-us.html
-Allow: /support.html
-Allow: /terms-and-conditions.html
-Allow: /privacy-policy.html
-Allow: /virat.jpeg
-Allow: /refer.jpeg
-
 Disallow: /apk/
-Allow: /apk/zupeex.apk
-
 Disallow: /cgi-bin/
 Disallow: /*?*
 
-Sitemap: https://zupeex.com/sitemap.xml
+Sitemap: https://gotigo.in/sitemap.xml
